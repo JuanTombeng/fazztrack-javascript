@@ -39,14 +39,14 @@ const reverseSentence = (input) => {
     let result = ''
     let temp = '';
     for (let i = 0; i < input.length; i++) {
-        temp = temp + input[i];
-        if (input[i] === ' ') {
-            input[i + 1]
-            result = temp + result;
+        if (input[i] !== ' ') {
+            temp = temp + input[i]
+        } else if (input[i] === ' ') {
+            result = ' ' + temp + result;
             temp = ''
         }
     }
-    console.log(`${temp} ${result}`)
+    console.log(`${temp}${result}`)
 }
 
 reverseSentence("Saya Belajar Javascript")
