@@ -5,6 +5,7 @@
 ## This repository contains basic javascript algorithms with each flowchart images.
 
 ### 1. Reverse each letter in a word:
+
     * Start
     * Read input
     * Declare and initialize result as an empty string
@@ -15,6 +16,7 @@
      End
 
 ### 2. Reverse each word in a sentence:
+
     * Start
     * Read input
     * Declare and initialize result and temp as empty strings
@@ -27,6 +29,7 @@
     * End
 
 ### 3. Palindrome checker:
+
     * Start
     * Read input
     * Declare and initialize result as empty strings
@@ -39,6 +42,7 @@
     * End
 
 ### 4. Change each letter 'a' to letter 'o' in a word:
+
     * Start 
     * Read input
     * Declare and initialize result as an empty string
