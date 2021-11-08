@@ -4,7 +4,6 @@
 
 ## This repository contains basic javascript algorithms with each flowchart images.
 
-## The assignments are: 
 ### 1. Reverse each letter in a word:
     * Start
     * Read input
