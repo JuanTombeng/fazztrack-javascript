@@ -4,7 +4,7 @@
 
 ## This repository contains basic javascript algorithms with each flowchart images.
 
-### 1. Reverse each letter in a word:
+## 1. Reverse each letter in a word:
 
     1. Start
     2. Read input
@@ -15,7 +15,7 @@
     7. Print result when the loop condition is not valid anymore
     8. End
 
-### 2. Reverse each word in a sentence:
+## 2. Reverse each word in a sentence:
 
     1. Start
     2. Read input
@@ -28,7 +28,7 @@
     9. Print value of temp and value of result when the loop condition is not valid anymore
     10. End
 
-### 3. Palindrome checker:
+## 3. Palindrome checker:
 
     1. Start
     2. Read input
@@ -41,14 +41,14 @@
     9. If the condition if false, print "the input is Not a Palindrome"
     10. End
 
-### 4. Change each letter 'a' to letter 'o' in a word:
+## 4. Change each letter 'a' to letter 'o' in a word:
 
-    * Start 
-    * Read input
-    * Declare and initialize result as an empty string
-    * Loop through the input with variable i from the first index of input to the last index of the input
-    * Each step, the position of i will increase by 1
-    * While the loop condition is still valid, adding value of result and string 'o' to the variable result if the index i of input is equal as string 'a' or string 'A'
-    * If the condition is false, adding value of result and index i of input to the variable result
-    * Print value of result when the loop condition is not valid anymore
-    * End
+    1. Start 
+    2. Read input
+    3. Declare and initialize result as an empty string
+    4. Loop through the input with variable i from the first index of input to the last index of the input
+    5. Each step, the position of i will increase by 1
+    6. While the loop condition is still valid, adding value of result and string 'o' to the variable result if the index i of input is equal as string 'a' or string 'A'
+    7. If the condition is false, adding value of result and index i of input to the variable result
+    8. Print value of result when the loop condition is not valid anymore
+    9. End
