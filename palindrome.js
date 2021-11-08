@@ -1,4 +1,4 @@
-const palindromChecker = (input) => {
+const palindromeChecker = (input) => {
     let temp = [];
     let result = ''
     lower = input.toLowerCase()
@@ -13,7 +13,7 @@ const palindromChecker = (input) => {
     }
 }
 
-const palindromChecker = (input) => {
+const palindromeChecker = (input) => {
     let result = '';
     let word = input.toLowerCase()
     for (let i = word.length -1; i >= 0; i--) {
@@ -26,4 +26,4 @@ const palindromChecker = (input) => {
     }
 }
 
-palindromChecker("kasurinirusak")
+palindromeChecker("kasurinirusak")
