@@ -5,7 +5,7 @@
 ## This repository contains basic javascript algorithms with each flowchart images.
 
 ## The assignments are: 
-1. Reverse each letter in a word:
+### 1. Reverse each letter in a word:
     * Start
     * Read input
     * Declare and initialize result as an empty string
@@ -15,7 +15,7 @@
     * Print result when the loop condition is not valid anymore
      End
 
-2. Reverse each word in a sentence:
+### 2. Reverse each word in a sentence:
     * Start
     * Read input
     * Declare and initialize result and temp as empty strings
@@ -27,7 +27,7 @@
     * Print value of temp and value of result when the loop condition is not valid anymore
     * End
 
-3. Palindrome checker:
+### 3. Palindrome checker:
     * Start
     * Read input
     * Declare and initialize result as empty strings
@@ -39,7 +39,7 @@
     * If the condition if false, print "the input is Not a Palindrome"
     * End
 
-4. Change each letter 'a' to letter 'o' in a word:
+### 4. Change each letter 'a' to letter 'o' in a word:
     * Start 
     * Read input
     * Declare and initialize result as an empty string
@@ -48,3 +48,4 @@
     * While the loop condition is still valid, adding value of result and string 'o' to the variable result if the index i of input is equal as string 'a' or string 'A'
     * If the condition is false, adding value of result and index i of input to the variable result
     * Print value of result when the loop condition is not valid anymore
+    * End
