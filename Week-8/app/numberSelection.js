@@ -12,13 +12,17 @@ const SeleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
                 result.unshift(dataArray[i])
             }
         }
+        result = result.sort((small, big) => {
+            return small - big
+        })
     }
     if (result.length === 0) {
         result = 'Jumlah angka dalam dataArray tidak ada'
     }
-    return result.sort((small, big) => {
-        return small - big
-    })
+    return result
 }
 
 console.log(SeleksiNilai(5, 20 , [2, 25, 4, 14, 17, 30, 8]))
+// console.log(SeleksiNilai(15, 3 , [2, 25, 4, 14, 17, 30, 8]))
+// console.log(SeleksiNilai(5, 17 , [2, 25, 4]))
+// console.log(SeleksiNilai(7, 21, [1,2,3,4,5,6]))
