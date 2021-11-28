@@ -1,50 +1,26 @@
+const names = ['Abigail', 'Alexandra', 'Alison', 'Amanda', 'Angela', 'Bella', 'Carol',
+                'Caroline', 'Carolyn', 'Deirdre', 'Diana', 'Elizabeth', 'Ella', 'Faith',
+                'Olivia', 'Penelope']
 
-// // callback function examples
-// const sayHello = (name, callback) => {
-//     let greeting = `Hello ${name}`
-//     return callback(greeting)
-// }
 
-// const showGreeting = (quote) => {
-//     return quote
-// }
+const searchName = (input, limiter, callback) => {
+    let temp = []
+    let array = names.map((name) => {
+        return name.toLowerCase()
+    })
+    let result = array.filter((name) => {
+        if (name.includes(input.toLowerCase())) {
+            temp.push(name)
+            return temp
+        }
+    })
+    return callback(result, limiter)
+}
 
-// console.log(sayHello('Juan', showGreeting))
+const displayResult = (input, limiter) => {
+    let result = input.slice(0, limiter)
+    return result
+}
 
-// const gradeSum = (grade1, grade2, callback) => {
-//     let sum = grade1 + grade2
-//     return `Your total score is: ${sum} and ${callback(sum)}`
-// }
 
-// const gradeAvarage = (total) => {
-//     return `Your avarage score is: ${total/2}`
-// }
-
-// console.log(gradeSum(90, 75, gradeAvarage))
-
-// // version modular
-// const gradeSum = (grade1, grade2) => {
-//     let sum = grade1 + grade2
-//     return gradeAvarage(sum)
-// }
-
-// const gradeAvarage = (total) => {
-//     return total/2
-// }
-
-// console.log(gradeSum(90, 75))
-
-// let test = 'juan@gmail.com'
-
-// const username = () => {
-//     let temp = ''
-//     for (let i = 0; i < test.length; i++) {
-//         temp += test[i]
-//         if (test[i] === '@') {
-//             break
-//         }
-//     }
-//     return temp
-// }
-
-// console.log(username())
+console.log(searchName('Eli', 3, displayResult))

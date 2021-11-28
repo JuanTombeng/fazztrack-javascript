@@ -18,7 +18,7 @@ const signup = (email, password) => {
         return temp
     }
     database.push({email: email, password: encrypted, name: username()})
-    return `Succesfully signed up! Hello Mr.${username()}`
+    return `Succesfully signed up! Hello Mr.${username()} ${encrypted}`
 }
 
 const login = (email, password) => {
@@ -34,5 +34,5 @@ const login = (email, password) => {
 }
 
 console.log(signup('juan@gmail.com','Asd,car21'))
-console.log(login('juan@gmail.com','Asd,car21'))
+console.log(login('juan@gmail.com','Asd1,car21'))
 

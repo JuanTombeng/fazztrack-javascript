@@ -52,7 +52,7 @@
 //     return result
 // }
 
-// console.log(searchNames('an', 3, displayResult))
+// console.log(searchNames('pe', 3, displayResult))
 
 
 // version 3
@@ -80,4 +80,4 @@ const displayResult = (input, limiter) => {
     return result
 }
 
-console.log(searchNames('an', 3, displayResult))
+console.log(searchNames('pe', 3, displayResult))

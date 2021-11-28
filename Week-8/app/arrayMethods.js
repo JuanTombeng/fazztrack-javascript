@@ -1,10 +1,10 @@
-// const products = [
-//     { id : 1, name : 'Acer', model : 'Swiftbook 14', screen : 'IPS', price : 700 },
-//     { id : 2, name : 'Asus', model : 'Vivobook 14', screen : 'IPS', price : 820 },
-//     { id : 3, name : 'Dell', model : 'Inspiron 14', screen : 'IPS', price : 640 },
-//     { id : 4, name : 'HP', model : 'Spectre 14', screen : 'IPS', price : 850 },
-//     { id : 5, name : 'Lenovo', model : 'Ideapad 14', screen : 'IPS', price : 770 },
-// ]
+const products = [
+    { id : 1, name : 'Acer', model : 'Swiftbook 14', screen : 'IPS', price : 700 },
+    { id : 2, name : 'Asus', model : 'Vivobook 14', screen : 'IPS', price : 820 },
+    { id : 3, name : 'Dell', model : 'Inspiron 14', screen : 'IPS', price : 640 },
+    { id : 4, name : 'HP', model : 'Spectre 14', screen : 'IPS', price : 850 },
+    { id : 5, name : 'Lenovo', model : 'Ideapad 14', screen : 'IPS', price : 770 },
+]
 
 // // Method #1
 // const sumPrice = (input) => {
@@ -18,8 +18,8 @@
 
 // // Method #2
 // const productNames = () => {
-//     products.map((product) => {
-//         console.log(product.name)
+//     products.map(({item}) => {
+//         console.log(item.name)
 //     })
 // }
 // productNames()
@@ -49,28 +49,28 @@
 
 
 
-// const users = [
-//     {
-//         firstName : 'Juan',
-//         lastName : 'Tombeng',
-//         department : 'Development'
-//     },
-//     {
-//         firstName : 'John',
-//         lastName : 'Morrison',
-//         department : 'Finance'
-//     },
-//     {
-//         firstName : 'Arthur',
-//         lastName : 'Boi',
-//         department : 'Management'
-//     },
-//     {
-//         firstName : 'Verent',
-//         lastName : 'Annabelle',
-//         department : 'Management'
-//     },
-// ]
+const users = [
+    {
+        firstName : 'Juan',
+        lastName : 'Tombeng',
+        department : 'Development'
+    },
+    {
+        firstName : 'John',
+        lastName : 'Morrison',
+        department : 'Finance'
+    },
+    {
+        firstName : 'Arthur',
+        lastName : 'Boi',
+        department : 'Management'
+    },
+    {
+        firstName : 'Verent',
+        lastName : 'Annabelle',
+        department : 'Management'
+    },
+]
 
 // // Method #6
 // const sortUsers = (input) => {
