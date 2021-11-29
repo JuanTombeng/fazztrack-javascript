@@ -20,7 +20,6 @@ const cariHariKerja = (day) => {
     })
 }
 
-
 // const cariHariKerja = async (day) => {
 //     try {
 //         const result = await new Promise ((resolve, reject) => {
@@ -43,3 +42,20 @@ const cariHariKerja = (day) => {
 // }
 
 cariHariKerja('senin')
+
+/* penjelasan:
+    try...catch :
+        - try statement adalah sebuah block code yang akan ditest untuk error
+        selama block code itu sedang dieksekusi
+        - catch statement adalah sebuah block code yang akan dieksekusi apabila
+        hasil dari statement try adalah sebuah error
+
+    then...catch : 
+        - then method akan dieksekusi sebagai proses lanjutan dari promise
+        dengan catatan selama promise men return hasil yang fullfilled promise
+        - catch methid akan dieksekusi sebagai proses lanjutan dari promise
+        jika hasil dari promise men return hasil yang rejected
+*/
+
+
+    
