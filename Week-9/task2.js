@@ -11,7 +11,7 @@ const displayMonth = (message, data) => {
 const getMonth = (callback) => {
     return new Promise ((resolve, reject) => {
         setTimeout(() => {
-            let error = false
+            let error = true
             let month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
             if (!error) {
                 resolve(callback(null, month))
@@ -26,4 +26,4 @@ const getMonth = (callback) => {
     })
 }
 
-console.log(getMonth(displayMonth))
+getMonth(displayMonth)

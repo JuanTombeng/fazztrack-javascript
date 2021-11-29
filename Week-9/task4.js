@@ -1,9 +1,13 @@
 import fetch from 'node-fetch'
 
-const getUsers = async () => {
-    const response = await fetch('https://jsonplaceholder.typicode.com/users')
-    response.json()
-    .then(data => {
+const fetcher = async (url) => {
+    const res = await fetch(url)
+    const data = res.json()
+    return data
+}
+
+const getUsers = async (data) => {
+    data.then(data => {
         return data.map(item => {
             console.log(item.name)
         })
@@ -14,4 +18,4 @@ const getUsers = async () => {
 }
 
 
-console.log(getUsers())
+getUsers(fetcher('https://jsonplaceholder.typicode.com/users'))

@@ -12,13 +12,15 @@ const cariHariKerja = (day) => {
             }
         }, 3000)
     })
-    .then((check) => {
-        console.log(check)
-    })
-    .catch((err) => {
-        console.log(err)
-    })
 }
+
+cariHariKerja('senin')
+.then((check) => {
+    console.log(check)
+})
+.catch((err) => {
+    console.log(err)
+})
 
 // const cariHariKerja = async (day) => {
 //     try {
@@ -41,7 +43,8 @@ const cariHariKerja = (day) => {
 //     }
 // }
 
-cariHariKerja('senin')
+// cariHariKerja('sabtu')
+
 
 /* penjelasan:
     try...catch :
