@@ -7,14 +7,14 @@ const healthChecking = (data) => {
                 reject(`Tidur anda masih di bawah 7 jam, mohon diperbaiki`)
             }
         }, 2000)
-    }).then((result) => {
-        console.log(result)
-    }).catch((error) => {
-        console.log(error)
     })
 }
 
-healthChecking(8)
+healthChecking(8).then((result) => {
+    console.log(result)
+}).catch((error) => {
+    console.log(error)
+})
 
 
 const cariKeluarga2 = () => {
@@ -32,15 +32,14 @@ const cariKeluarga2 = () => {
             }
         }, 3000)
     })
-    .then((check) => {
-        console.log(check)
-    })
-    .catch((err) => {
-        console.log(err)
-    })
 }
 
-cariKeluarga2()
+cariKeluarga2().then((check) => {
+    console.log(check)
+})
+.catch((err) => {
+    console.log(err)
+})
 
 
 // import fetch from 'node-fetch'
@@ -55,16 +54,16 @@ cariKeluarga2()
 //                 reject(new Error(`Error`))
 //             }
 //         }, 3000)
-//     }).then((result) => {
-//         return result.results.map((item) => {
-//             console.log(item.title)
-//         })
-//     }).catch((error) => {
-//         console.log(error)
-//     })
+//    })
 // }
 
-// displayArticles()
+// displayArticles().then((result) => {
+//     return result.results.map((item) => {
+//         console.log(item.title)
+//     })
+// }).catch((error) => {
+//     console.log(error)
+// })
 
 
 

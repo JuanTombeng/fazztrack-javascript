@@ -19,11 +19,11 @@ const getMonth = (callback) => {
                 reject(callback(new Error (`Sorry Data Not Found`)), [])
             }
         }, 4000)
-    }).then((result) => {
-        console.log(result)
-    }).catch((err) => {
-        console.log(err)
     })
 }
 
-getMonth(displayMonth)
+getMonth(displayMonth).then((result) => {
+    console.log(result)
+}).catch((err) => {
+    console.log(err)
+})
